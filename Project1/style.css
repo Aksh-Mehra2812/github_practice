@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kalnia&family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    --primary-color:#F0ECE5;
+    --secondary-color:#B6BBC4;
+    --btn-color:#31304D;
+    --text-color:#161A30;
+
+}
+.about-banner{
+    display: flex;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    padding:2rem;
+    background-color:#e3e3e3;
+}
+
+.card{
+    position: relative;
+    width:350px;
+    height:250px;
+    background-color:#000;
+    overflow: hidden;
+}
+.card_image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    scale:1.15;
+    transition: opacity 0.25s, scale 0.35s;
+}
+.card:hover .card_image{
+    opacity:0.5;
+    scale:1;
+}
